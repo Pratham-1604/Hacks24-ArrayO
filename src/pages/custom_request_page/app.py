@@ -118,9 +118,10 @@ class InteriorDesignChatBot:
                 recommended_styles = keyword_set["styles"]
 
         user_keywords = self.extract_keywords(user_input)
-
+        
         if recommended_styles:
-            return user_keywords + recommended_styles
+            user_keywords.append(recommended_styles)
+            return user_keywords
         else:
             return ""
 
