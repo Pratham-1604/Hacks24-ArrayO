@@ -1,11 +1,26 @@
-import React from "react";
-import "./App.css";
-import ParallaxComponent from "./pages/home_page/ParallaxComponent";
+import React, { useState } from "react";
+import Navbar from "./Navbar";
+import Sidebar from "./Sidebar";
+import RecommendedComponent from "./pages/recommended_component/RecommendedComponent";
+import CustomRequestPage from "./pages/custom_request_page/CustomRequestPage";
 
 function App() {
+  const [selectedOption, setSelectedOption] = useState("recommended");
+
+  const handleOptionClick = (option) => {
+    setSelectedOption(option);
+  };
+
   return (
-    <div className="App">
-      <ParallaxComponent />
+    <div className="flex flex-col h-screen">
+      <Navbar />
+      <div className="flex flex-1">
+        <Sidebar onOptionClick={handleOptionClick} />
+        <div className="flex-1 p-4">
+          {selectedOption === "recommended" && <RecommendedComponent />}
+          {selectedOption === "custom" && <CustomRequestPage />}
+        </div>
+      </div>
     </div>
   );
 }
