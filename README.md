@@ -1,6 +1,6 @@
 # Design-Mitra
 
-## Your one stop solution for interior designing with the help of ai.
+## Your one stop solution for interior designing with the help of ai and 3d rendering.
 
 ## Features:
 1. ### Text to image generation: Using the dynamic stable diffusion models to generate images based on user preferences and ideas.
