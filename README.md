@@ -10,7 +10,7 @@
 5. ### Budget Estimation: Using Image profiling to determine the objects and calcualting average price required to decorate the room as per the image displayed.
 6. ### Redundant Image Removal: Redundant object removal using image inpainting.
 
-Screenshots:
+## Screenshots:
 ![Screenshot (408)](https://github.com/Pratham-1604/Hacks24-ArrayO/assets/97680850/8545e4a2-9ff4-4914-9220-5aa542fcc796)
 ![Screenshot (407)](https://github.com/Pratham-1604/Hacks24-ArrayO/assets/97680850/e0e81d07-7f3e-4192-9240-02bb9bb1c3ad)
 ![Screenshot (405)](https://github.com/Pratham-1604/Hacks24-ArrayO/assets/97680850/0c109801-3085-4670-b142-6bcb11afabbd)
