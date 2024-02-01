@@ -2,13 +2,13 @@
 
 ## Your one stop solution for interior designing with the help of ai.
 
-Our solution has the following features:
-1. Text to image generation: Using the dynamic stable diffusion models to generate images based on user preferences and ideas.
-2. Simple Recommendation System: Displaying the trending interior designs prevalent in todays world; also using systematic questioning to design user profile using NLP and recommending designs.
-3. Theme Updation: Using cyclic-GANs for unpaired style conversion/transfer, so that updates on images does not change the image altogether helping in the theme updation
-4. Budget Estimation: Using Image profiling to determine the objects and calcualting average price required to decorate the room as per the image displayed.
-5. 3D environment and rendering: Presenting  our usp, 3D environment built using Unity3d. In this environment, you are given objects which you can move and see how they would look in the current setting. You can also change certain colours of the objects to see different colour combinations suitable for your room.
-6. Redundant Image Removal: Redundant object removal using image inpainting.
+## Features:
+1. ### Text to image generation: Using the dynamic stable diffusion models to generate images based on user preferences and ideas.
+2. ### 3D environment and rendering: Presenting  our usp, 3D environment built using Unity3d. In this environment, you are given objects which you can move and see how they would look in the current setting. You can also change certain colours of the objects to see different colour combinations suitable for your room.
+3. ### Simple Recommendation System: Displaying the trending interior designs prevalent in todays world; also using systematic questioning to design user profile using NLP and recommending designs.
+4. ### Theme Updation: Using cyclic-GANs for unpaired style conversion/transfer, so that updates on images does not change the image altogether helping in the theme updation
+5. ### Budget Estimation: Using Image profiling to determine the objects and calcualting average price required to decorate the room as per the image displayed.
+6. ### Redundant Image Removal: Redundant object removal using image inpainting.
 
 Screenshots:
 ![Screenshot (408)](https://github.com/Pratham-1604/Hacks24-ArrayO/assets/97680850/8545e4a2-9ff4-4914-9220-5aa542fcc796)
