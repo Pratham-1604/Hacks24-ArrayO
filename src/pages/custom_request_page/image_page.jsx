@@ -4,7 +4,7 @@ import axios from "axios";
 const ImageGenerator = () => {
   const [textInput, setTextInput] = useState("");
   const [generatedImage, setGeneratedImage] = useState();
-
+  const [imageArray, setImageArray] = useState([]);
   const handleChange = (e) => {
     setTextInput(e.target.value);
   };
@@ -14,7 +14,7 @@ const ImageGenerator = () => {
     try {
       // Post the form data to your API endpoint
       const response = await axios.post(
-        "https://47d5-35-197-62-82.ngrok-free.app//generate",
+        "https://c073-35-197-62-82.ngrok-free.app/generate",
         {
           prompt: textInput,
           neg_prompt: "",
@@ -23,6 +23,7 @@ const ImageGenerator = () => {
 
       // Handle success and update the state with the generated image
       setGeneratedImage(response.data.generated_image);
+      setImageArray(response.data.image_array);
     } catch (error) {
       // Handle errors or provide user feedback
       console.error("Error submitting text:", error);
@@ -33,14 +34,15 @@ const ImageGenerator = () => {
     try {
       // Post the form data to your API endpoint
       const response = await axios.post(
-        "https://2092-34-125-77-206.ngrok-free.app/" + color,
+        "https://0bba-34-125-77-206.ngrok-free.app/" + color,
         {
-          generated_image: generatedImage,
+          image_array: imageArray,
         }
       );
 
       // Handle success and update the state with the generated image
       setGeneratedImage(response.data.generated_image);
+      setImageArray(response.data.image_array);
     } catch (error) {
       // Handle errors or provide user feedback
       console.error("Error submitting text:", error);

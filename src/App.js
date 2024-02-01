@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
 import RecommendedComponent from "./pages/recommended_component/RecommendedComponent";
 import CustomRequestPage from "./pages/custom_request_page/CustomRequestPage";
+import UserProfilingComponent from "./pages/recommended_component/UserProfilingComponent";
 
 function App() {
   const [selectedOption, setSelectedOption] = useState("recommended");
@@ -17,7 +18,7 @@ function App() {
       <div className="flex flex-1">
         <Sidebar onOptionClick={handleOptionClick} />
         <div className="flex-1 p-4">
-          {selectedOption === "recommended" && <RecommendedComponent />}
+          {selectedOption === "recommended" && <UserProfilingComponent />}
           {selectedOption === "custom" && <CustomRequestPage />}
         </div>
       </div>
